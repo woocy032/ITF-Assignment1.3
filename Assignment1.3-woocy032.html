@@ -45,8 +45,19 @@
         font-size: 150%;
         color: rgb(181,137,  0);
         }
+        /* navigation width */
+        .navigation {
+            width: 100%;
+        }
+        /* unordered list formatting in navigation */
+        .navigation ul {
+        list-style-type: none;
+        display: flex; 
+        justify-content: space-evenly; 
+        align-items: center; 
+        }
 
-      :root {
+        :root {
         --base-font-color: rgb(131,148,150);
         --secondary-font-color: rgb(88,110,117);
         --emphasised-font: rgb(147,161,161);
@@ -74,21 +85,21 @@
       <h1>Header</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
-       <!-- A Search form is another common non-linear way to navigate through a website. -->
+        <!-- A Search form is another common non-linear way to navigate through a website. -->
 
-       <form>
-         <input type="search" name="q" placeholder="Search query">
-         <input type="submit" value="Go!">
-       </form>
-     </nav>
+        <form>
+            <input type="search" name="q" placeholder="Search query">
+            <input type="submit" value="Go!">
+        </form>
+    </nav>
 
     <!-- Here is our page's main content -->
     <main>
@@ -107,7 +118,7 @@
 
             <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
         </div>
-        
+
         <!-- It contains a another subsection -->
         <div class="subsection">
             <h3>Another subsection</h3>
